@@ -30,92 +30,92 @@ namespace Querymancer
         private void InitializeComponent()
         {
             this.Mid_Panel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Right_Border = new System.Windows.Forms.Panel();
+            this.Left_Border = new System.Windows.Forms.Panel();
+            this.Top_Border = new System.Windows.Forms.Panel();
+            this.Bottom_Border = new System.Windows.Forms.Panel();
+            this.Minimize_PictureBox = new System.Windows.Forms.PictureBox();
+            this.Exit_PictureBox = new System.Windows.Forms.PictureBox();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.Mid_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Mid_Panel
             // 
             this.Mid_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(27)))), ((int)(((byte)(62)))));
-            this.Mid_Panel.Controls.Add(this.pictureBox2);
-            this.Mid_Panel.Controls.Add(this.pictureBox1);
+            this.Mid_Panel.Controls.Add(this.Minimize_PictureBox);
+            this.Mid_Panel.Controls.Add(this.Exit_PictureBox);
             this.Mid_Panel.Controls.Add(this.Logo_PictureBox);
-            this.Mid_Panel.Controls.Add(this.panel4);
-            this.Mid_Panel.Controls.Add(this.panel3);
-            this.Mid_Panel.Controls.Add(this.panel2);
-            this.Mid_Panel.Controls.Add(this.panel1);
+            this.Mid_Panel.Controls.Add(this.Bottom_Border);
+            this.Mid_Panel.Controls.Add(this.Top_Border);
+            this.Mid_Panel.Controls.Add(this.Left_Border);
+            this.Mid_Panel.Controls.Add(this.Right_Border);
             this.Mid_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Mid_Panel.Location = new System.Drawing.Point(0, 0);
             this.Mid_Panel.Name = "Mid_Panel";
             this.Mid_Panel.Size = new System.Drawing.Size(800, 450);
             this.Mid_Panel.TabIndex = 0;
             // 
-            // panel1
+            // Right_Border
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(798, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2, 450);
-            this.panel1.TabIndex = 0;
+            this.Right_Border.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.Right_Border.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Right_Border.Location = new System.Drawing.Point(798, 0);
+            this.Right_Border.Name = "Right_Border";
+            this.Right_Border.Size = new System.Drawing.Size(2, 450);
+            this.Right_Border.TabIndex = 0;
             // 
-            // panel2
+            // Left_Border
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(2, 450);
-            this.panel2.TabIndex = 1;
+            this.Left_Border.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.Left_Border.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Left_Border.Location = new System.Drawing.Point(0, 0);
+            this.Left_Border.Name = "Left_Border";
+            this.Left_Border.Size = new System.Drawing.Size(2, 450);
+            this.Left_Border.TabIndex = 1;
             // 
-            // panel3
+            // Top_Border
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(2, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(796, 2);
-            this.panel3.TabIndex = 2;
+            this.Top_Border.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.Top_Border.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Top_Border.Location = new System.Drawing.Point(2, 0);
+            this.Top_Border.Name = "Top_Border";
+            this.Top_Border.Size = new System.Drawing.Size(796, 2);
+            this.Top_Border.TabIndex = 2;
             // 
-            // panel4
+            // Bottom_Border
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(2, 448);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(796, 2);
-            this.panel4.TabIndex = 3;
+            this.Bottom_Border.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.Bottom_Border.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Bottom_Border.Location = new System.Drawing.Point(2, 448);
+            this.Bottom_Border.Name = "Bottom_Border";
+            this.Bottom_Border.Size = new System.Drawing.Size(796, 2);
+            this.Bottom_Border.TabIndex = 3;
             // 
-            // pictureBox2
+            // Minimize_PictureBox
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::Querymancer.Properties.Resources.Querymancer_MinimizeIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(697, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(52, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.Minimize_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Minimize_PictureBox.Image = global::Querymancer.Properties.Resources.Querymancer_MinimizeIcon;
+            this.Minimize_PictureBox.Location = new System.Drawing.Point(697, 27);
+            this.Minimize_PictureBox.Name = "Minimize_PictureBox";
+            this.Minimize_PictureBox.Size = new System.Drawing.Size(52, 32);
+            this.Minimize_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Minimize_PictureBox.TabIndex = 6;
+            this.Minimize_PictureBox.TabStop = false;
             // 
-            // pictureBox1
+            // Exit_PictureBox
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Querymancer.Properties.Resources.Querymance_ExitIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(740, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.Exit_PictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_PictureBox.Image = global::Querymancer.Properties.Resources.Querymance_ExitIcon;
+            this.Exit_PictureBox.Location = new System.Drawing.Point(740, 5);
+            this.Exit_PictureBox.Name = "Exit_PictureBox";
+            this.Exit_PictureBox.Size = new System.Drawing.Size(52, 55);
+            this.Exit_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Exit_PictureBox.TabIndex = 5;
+            this.Exit_PictureBox.TabStop = false;
             // 
             // Logo_PictureBox
             // 
@@ -139,8 +139,8 @@ namespace Querymancer
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Querymancer";
             this.Mid_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -149,13 +149,13 @@ namespace Querymancer
         #endregion
 
         private System.Windows.Forms.Panel Mid_Panel;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Minimize_PictureBox;
+        private System.Windows.Forms.PictureBox Exit_PictureBox;
         private System.Windows.Forms.PictureBox Logo_PictureBox;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Bottom_Border;
+        private System.Windows.Forms.Panel Top_Border;
+        private System.Windows.Forms.Panel Left_Border;
+        private System.Windows.Forms.Panel Right_Border;
     }
 }
 
