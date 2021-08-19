@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Querymancer
 {
-    public partial class Form1 : Form
+    public partial class Querymancer_MainMenu : Form
     {
-        public Form1()
+        public Querymancer_MainMenu()
         {
             InitializeComponent();
         }
