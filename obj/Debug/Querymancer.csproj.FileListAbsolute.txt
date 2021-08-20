@@ -1,11 +1,9 @@
 C:\Users\u\source\repos\Querymancer\bin\Debug\Querymancer.exe.config
 C:\Users\u\source\repos\Querymancer\bin\Debug\Querymancer.exe
 C:\Users\u\source\repos\Querymancer\bin\Debug\Querymancer.pdb
-C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.csproj.AssemblyReference.cache
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.Querymancer_MainMenu.resources
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.Properties.Resources.resources
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.csproj.GenerateResource.cache
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.csproj.CoreCompileInputs.cache
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.exe
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.pdb
-C:\Users\u\source\repos\Querymancer\bin\Debug\Querymancer.accdb
