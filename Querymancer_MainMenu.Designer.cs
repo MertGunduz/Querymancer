@@ -145,10 +145,12 @@ namespace Querymancer
             this.QueryTextBox.Size = new System.Drawing.Size(751, 27);
             this.QueryTextBox.TabIndex = 8;
             this.QueryTextBox.Text = "  Enter Query:";
+            this.QueryTextBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.QueryTextBox_MouseClick);
             // 
             // ExecuteSQLQuery_Button
             // 
             this.ExecuteSQLQuery_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.ExecuteSQLQuery_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ExecuteSQLQuery_Button.FlatAppearance.BorderSize = 0;
             this.ExecuteSQLQuery_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
             this.ExecuteSQLQuery_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
@@ -165,6 +167,7 @@ namespace Querymancer
             this.ExecuteSQLQuery_Button.Text = "Execute SQL Query";
             this.ExecuteSQLQuery_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ExecuteSQLQuery_Button.UseVisualStyleBackColor = false;
+            this.ExecuteSQLQuery_Button.Click += new System.EventHandler(this.ExecuteSQLQuery_Button_Click);
             // 
             // Minimize_PictureBox
             // 

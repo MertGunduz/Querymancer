@@ -23,11 +23,38 @@ namespace Querymancer
         
         private void Querymancer_MainMenu_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'querymancerDataSet.Query_Table' table. You can move, or remove it, as needed.
-            this.query_TableTableAdapter.Fill(this.querymancerDataSet.Query_Table);
             ListTable();
         }
 
+        private void QueryTextBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (QueryTextBox.Text == "  Enter Query:")
+            {
+                QueryTextBox.Clear();
+            }
+        }
+
+        private void ExecuteSQLQuery_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                oleDbConnection.Open();
+                OleDbCommand clientQuery = new OleDbCommand(QueryTextBox.Text, oleDbConnection);
+                clientQuery.ExecuteNonQuery();
+                oleDbConnection.Close();
+
+                ListTable();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+
+            if (oleDbConnection.State == ConnectionState.Open) 
+            {
+                oleDbConnection.Close();
+            }
+        }
         private void ListTable()
         {
             // Connection Opened
