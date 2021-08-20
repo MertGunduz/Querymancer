@@ -35,14 +35,14 @@ namespace Querymancer
             this.Left_Border = new System.Windows.Forms.Panel();
             this.Top_Border = new System.Windows.Forms.Panel();
             this.Bottom_Border = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Query_DataGridView = new System.Windows.Forms.DataGridView();
+            this.QueryTextBox = new System.Windows.Forms.TextBox();
             this.ExecuteSQLQuery_Button = new System.Windows.Forms.Button();
             this.Minimize_PictureBox = new System.Windows.Forms.PictureBox();
             this.Exit_PictureBox = new System.Windows.Forms.PictureBox();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.Mid_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Query_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
@@ -52,8 +52,8 @@ namespace Querymancer
             // 
             this.Mid_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(27)))), ((int)(((byte)(62)))));
             this.Mid_Panel.Controls.Add(this.ExecuteSQLQuery_Button);
-            this.Mid_Panel.Controls.Add(this.textBox1);
-            this.Mid_Panel.Controls.Add(this.dataGridView1);
+            this.Mid_Panel.Controls.Add(this.QueryTextBox);
+            this.Mid_Panel.Controls.Add(this.Query_DataGridView);
             this.Mid_Panel.Controls.Add(this.Minimize_PictureBox);
             this.Mid_Panel.Controls.Add(this.Exit_PictureBox);
             this.Mid_Panel.Controls.Add(this.Logo_PictureBox);
@@ -103,26 +103,26 @@ namespace Querymancer
             this.Bottom_Border.Size = new System.Drawing.Size(796, 2);
             this.Bottom_Border.TabIndex = 3;
             // 
-            // dataGridView1
+            // Query_DataGridView
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(27)))), ((int)(((byte)(62)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 230);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(796, 268);
-            this.dataGridView1.TabIndex = 7;
+            this.Query_DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(27)))), ((int)(((byte)(62)))));
+            this.Query_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Query_DataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Query_DataGridView.Location = new System.Drawing.Point(2, 230);
+            this.Query_DataGridView.Name = "Query_DataGridView";
+            this.Query_DataGridView.Size = new System.Drawing.Size(796, 268);
+            this.Query_DataGridView.TabIndex = 7;
             // 
-            // textBox1
+            // QueryTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
-            this.textBox1.Location = new System.Drawing.Point(25, 129);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(751, 27);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "  Enter Query:";
+            this.QueryTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.QueryTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.QueryTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
+            this.QueryTextBox.Location = new System.Drawing.Point(25, 129);
+            this.QueryTextBox.Name = "QueryTextBox";
+            this.QueryTextBox.Size = new System.Drawing.Size(751, 27);
+            this.QueryTextBox.TabIndex = 8;
+            this.QueryTextBox.Text = "  Enter Query:";
             // 
             // ExecuteSQLQuery_Button
             // 
@@ -190,7 +190,7 @@ namespace Querymancer
             this.Text = "Querymancer";
             this.Mid_Panel.ResumeLayout(false);
             this.Mid_Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Query_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
@@ -208,8 +208,8 @@ namespace Querymancer
         private System.Windows.Forms.Panel Top_Border;
         private System.Windows.Forms.Panel Left_Border;
         private System.Windows.Forms.Panel Right_Border;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView Query_DataGridView;
+        private System.Windows.Forms.TextBox QueryTextBox;
         private System.Windows.Forms.Button ExecuteSQLQuery_Button;
     }
 }
