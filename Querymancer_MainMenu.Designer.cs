@@ -188,6 +188,7 @@ namespace Querymancer
             this.Name = "Querymancer_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Querymancer";
+            this.Load += new System.EventHandler(this.Querymancer_MainMenu_Load);
             this.Mid_Panel.ResumeLayout(false);
             this.Mid_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Query_DataGridView)).EndInit();

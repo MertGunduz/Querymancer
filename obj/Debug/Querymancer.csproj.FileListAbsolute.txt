@@ -8,3 +8,4 @@ C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.csproj.GenerateResourc
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.csproj.CoreCompileInputs.cache
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.exe
 C:\Users\u\source\repos\Querymancer\obj\Debug\Querymancer.pdb
+C:\Users\u\source\repos\Querymancer\bin\Debug\Querymancer.accdb
