@@ -23,6 +23,8 @@ namespace Querymancer
         
         private void Querymancer_MainMenu_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'querymancerDataSet.Query_Table' table. You can move, or remove it, as needed.
+            this.query_TableTableAdapter.Fill(this.querymancerDataSet.Query_Table);
             ListTable();
         }
 

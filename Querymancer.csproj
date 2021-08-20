@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
+    <Compile Include="QuerymancerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuerymancerDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Querymancer_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +85,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuerymancerDataSet.xsc">
+      <DependentUpon>QuerymancerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuerymancerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuerymancerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuerymancerDataSet.xss">
+      <DependentUpon>QuerymancerDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -94,6 +110,9 @@
     <None Include="Resources\Querymancer_MinimizeIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Querymancer.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Querymancer_Logo.ico" />
     <None Include="Resources\Querymancer_ExecuteIcon.png" />
   </ItemGroup>

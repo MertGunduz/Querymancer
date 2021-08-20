@@ -29,6 +29,7 @@ namespace Querymancer
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Querymancer_MainMenu));
             this.Mid_Panel = new System.Windows.Forms.Panel();
             this.Right_Border = new System.Windows.Forms.Panel();
@@ -41,11 +42,22 @@ namespace Querymancer
             this.Minimize_PictureBox = new System.Windows.Forms.PictureBox();
             this.Exit_PictureBox = new System.Windows.Forms.PictureBox();
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
+            this.querymancerDataSet = new Querymancer.QuerymancerDataSet();
+            this.queryTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.query_TableTableAdapter = new Querymancer.QuerymancerDataSetTableAdapters.Query_TableTableAdapter();
+            this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userSurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userAgeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userBloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userFieldDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mid_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Query_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.querymancerDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Mid_Panel
@@ -105,8 +117,18 @@ namespace Querymancer
             // 
             // Query_DataGridView
             // 
+            this.Query_DataGridView.AutoGenerateColumns = false;
+            this.Query_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Query_DataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(27)))), ((int)(((byte)(62)))));
             this.Query_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Query_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userIDDataGridViewTextBoxColumn,
+            this.userNameDataGridViewTextBoxColumn,
+            this.userSurnameDataGridViewTextBoxColumn,
+            this.userAgeDataGridViewTextBoxColumn,
+            this.userBloodGroupDataGridViewTextBoxColumn,
+            this.userFieldDataGridViewTextBoxColumn});
+            this.Query_DataGridView.DataSource = this.queryTableBindingSource;
             this.Query_DataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Query_DataGridView.Location = new System.Drawing.Point(2, 230);
             this.Query_DataGridView.Name = "Query_DataGridView";
@@ -177,6 +199,56 @@ namespace Querymancer
             this.Logo_PictureBox.TabIndex = 4;
             this.Logo_PictureBox.TabStop = false;
             // 
+            // querymancerDataSet
+            // 
+            this.querymancerDataSet.DataSetName = "QuerymancerDataSet";
+            this.querymancerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // queryTableBindingSource
+            // 
+            this.queryTableBindingSource.DataMember = "Query_Table";
+            this.queryTableBindingSource.DataSource = this.querymancerDataSet;
+            // 
+            // query_TableTableAdapter
+            // 
+            this.query_TableTableAdapter.ClearBeforeFill = true;
+            // 
+            // userIDDataGridViewTextBoxColumn
+            // 
+            this.userIDDataGridViewTextBoxColumn.DataPropertyName = "User_ID";
+            this.userIDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "User_Name";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            // 
+            // userSurnameDataGridViewTextBoxColumn
+            // 
+            this.userSurnameDataGridViewTextBoxColumn.DataPropertyName = "User_Surname";
+            this.userSurnameDataGridViewTextBoxColumn.HeaderText = "Surname";
+            this.userSurnameDataGridViewTextBoxColumn.Name = "userSurnameDataGridViewTextBoxColumn";
+            // 
+            // userAgeDataGridViewTextBoxColumn
+            // 
+            this.userAgeDataGridViewTextBoxColumn.DataPropertyName = "User_Age";
+            this.userAgeDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.userAgeDataGridViewTextBoxColumn.Name = "userAgeDataGridViewTextBoxColumn";
+            // 
+            // userBloodGroupDataGridViewTextBoxColumn
+            // 
+            this.userBloodGroupDataGridViewTextBoxColumn.DataPropertyName = "User_BloodGroup";
+            this.userBloodGroupDataGridViewTextBoxColumn.HeaderText = "Blood Group";
+            this.userBloodGroupDataGridViewTextBoxColumn.Name = "userBloodGroupDataGridViewTextBoxColumn";
+            // 
+            // userFieldDataGridViewTextBoxColumn
+            // 
+            this.userFieldDataGridViewTextBoxColumn.DataPropertyName = "User_Field";
+            this.userFieldDataGridViewTextBoxColumn.HeaderText = "Field";
+            this.userFieldDataGridViewTextBoxColumn.Name = "userFieldDataGridViewTextBoxColumn";
+            // 
             // Querymancer_MainMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -195,6 +267,8 @@ namespace Querymancer
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.querymancerDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.queryTableBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -212,6 +286,15 @@ namespace Querymancer
         private System.Windows.Forms.DataGridView Query_DataGridView;
         private System.Windows.Forms.TextBox QueryTextBox;
         private System.Windows.Forms.Button ExecuteSQLQuery_Button;
+        private QuerymancerDataSet querymancerDataSet;
+        private System.Windows.Forms.BindingSource queryTableBindingSource;
+        private QuerymancerDataSetTableAdapters.Query_TableTableAdapter query_TableTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userSurnameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userAgeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userBloodGroupDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userFieldDataGridViewTextBoxColumn;
     }
 }
 
