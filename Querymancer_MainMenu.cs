@@ -27,6 +27,15 @@ namespace Querymancer
                 QueryTextBox.Clear();
             }
         }
+        private void Minimize_PictureBox_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void Exit_PictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void ExecuteSQLQuery_Button_Click(object sender, EventArgs e)
         {
