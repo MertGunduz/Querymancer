@@ -73,6 +73,16 @@ namespace Querymancer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Querymancer_ExecuteIcon {
+            get {
+                object obj = ResourceManager.GetObject("Querymancer_ExecuteIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Querymancer_Logo {
             get {
                 object obj = ResourceManager.GetObject("Querymancer_Logo", resourceCulture);
