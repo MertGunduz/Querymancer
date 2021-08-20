@@ -1,9 +1,9 @@
 # Querymancer
 
-☉ Programming Language: C#
-☉ Framework: WinForms
-☉ Operating System: Windows
-☉ Database: Microsoft Access
+☉ Programming Language: C# <br>
+☉ Framework: WinForms <br>
+☉ Operating System: Windows <br>
+☉ Database: Microsoft Access <br>
 
 <i>With "Querymancer" you can write your own queries in a program and you can work with the database environment.</i>
 
