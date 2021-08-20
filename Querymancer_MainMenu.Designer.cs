@@ -29,6 +29,7 @@ namespace Querymancer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Querymancer_MainMenu));
             this.Mid_Panel = new System.Windows.Forms.Panel();
             this.Right_Border = new System.Windows.Forms.Panel();
             this.Left_Border = new System.Windows.Forms.Panel();
@@ -39,7 +40,7 @@ namespace Querymancer
             this.Logo_PictureBox = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ExecuteSQLQuery_Button = new System.Windows.Forms.Button();
             this.Mid_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize_PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Exit_PictureBox)).BeginInit();
@@ -50,7 +51,7 @@ namespace Querymancer
             // Mid_Panel
             // 
             this.Mid_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(27)))), ((int)(((byte)(62)))));
-            this.Mid_Panel.Controls.Add(this.button1);
+            this.Mid_Panel.Controls.Add(this.ExecuteSQLQuery_Button);
             this.Mid_Panel.Controls.Add(this.textBox1);
             this.Mid_Panel.Controls.Add(this.dataGridView1);
             this.Mid_Panel.Controls.Add(this.Minimize_PictureBox);
@@ -156,23 +157,23 @@ namespace Querymancer
             this.textBox1.TabIndex = 8;
             this.textBox1.Text = "  Enter Query:";
             // 
-            // button1
+            // ExecuteSQLQuery_Button
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
-            this.button1.Location = new System.Drawing.Point(25, 175);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.button1.Size = new System.Drawing.Size(751, 35);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Execute SQL Query";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.ExecuteSQLQuery_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.ExecuteSQLQuery_Button.FlatAppearance.BorderSize = 0;
+            this.ExecuteSQLQuery_Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.ExecuteSQLQuery_Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(61)))), ((int)(((byte)(159)))));
+            this.ExecuteSQLQuery_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ExecuteSQLQuery_Button.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ExecuteSQLQuery_Button.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(98)))), ((int)(((byte)(213)))));
+            this.ExecuteSQLQuery_Button.Location = new System.Drawing.Point(25, 175);
+            this.ExecuteSQLQuery_Button.Name = "ExecuteSQLQuery_Button";
+            this.ExecuteSQLQuery_Button.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
+            this.ExecuteSQLQuery_Button.Size = new System.Drawing.Size(751, 35);
+            this.ExecuteSQLQuery_Button.TabIndex = 9;
+            this.ExecuteSQLQuery_Button.Text = "Execute SQL Query";
+            this.ExecuteSQLQuery_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ExecuteSQLQuery_Button.UseVisualStyleBackColor = false;
             // 
             // Querymancer_MainMenu
             // 
@@ -181,6 +182,7 @@ namespace Querymancer
             this.Controls.Add(this.Mid_Panel);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Querymancer_MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Querymancer";
@@ -206,7 +208,7 @@ namespace Querymancer
         private System.Windows.Forms.Panel Right_Border;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ExecuteSQLQuery_Button;
     }
 }
 
